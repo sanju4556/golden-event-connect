@@ -90,7 +90,7 @@ const packages = [
     desc: "Tell us your vision and budget — we'll craft it from scratch.",
     href: "/packages/customized",
   },
-] as const;
+] as Array<{ name: string; Icon: typeof Sparkles; desc: string; href: "/packages/classic" | "/packages/premium" | "/packages/customized"; featured?: boolean }>;
 
 function Home() {
   const exploreHref = "/packages";

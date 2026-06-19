@@ -36,7 +36,7 @@ const items = [
     href: "/packages/customized",
     bullets: ["Theme-based concept", "Designed to your budget", "Unlimited revisions"],
   },
-] as const;
+] as Array<{ name: string; Icon: typeof Sparkles; desc: string; href: "/packages/classic" | "/packages/premium" | "/packages/customized"; bullets: readonly string[]; featured?: boolean }>;
 
 function Packages() {
   return (
