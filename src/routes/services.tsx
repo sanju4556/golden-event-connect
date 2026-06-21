@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeader } from "@/components/site/Section";
-import { Heart, Gem, Cake, Sparkles, Briefcase, Baby, Home, Crown, Wand2 } from "lucide-react";
+import { Heart, Gem, Cake, Sparkles, Church, Scissors, Flower2, Music, Gift, Baby, Home, Crown, Wand2 } from "lucide-react";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -19,7 +19,11 @@ const services = [
   { Icon: Gem, t: "Engagements", d: "Romantic floral setups, ring-ceremony backdrops, photo zones." },
   { Icon: Cake, t: "Birthday Parties", d: "Themes for kids and adults — balloons, props, cake tables." },
   { Icon: Sparkles, t: "Reception Events", d: "Banquet styling, head tables, lighting and entertainment." },
-  { Icon: Briefcase, t: "Corporate Events", d: "Conferences, product launches, gala dinners, awards." },
+  { Icon: Church, t: "Baptism", d: "Sacred, elegant setups for christening ceremonies and family blessings." },
+  { Icon: Scissors, t: "Inauguration", d: "Grand ribbon-cutting backdrops, floral arches and ceremonial decor." },
+  { Icon: Flower2, t: "Haldi", d: "Vibrant turmeric-themed florals, marigolds and traditional low seating." },
+  { Icon: Music, t: "Sangeeth", d: "Lively musical-night decor with stage lights, drapes and dance floors." },
+  { Icon: Gift, t: "Bridal Shower", d: "Intimate, chic celebrations curated for the bride-to-be." },
   { Icon: Baby, t: "Baby Showers", d: "Whimsical decor, themed photo walls, dessert tables." },
   { Icon: Home, t: "Housewarming", d: "Traditional pooja setups with elegant modern touches." },
   { Icon: Crown, t: "Stage Decoration", d: "Bespoke backdrops, drapes, florals, lighting design." },

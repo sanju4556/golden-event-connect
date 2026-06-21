@@ -5,7 +5,11 @@ import {
   Wand2,
   Heart,
   Cake,
-  Briefcase,
+  Church,
+  Scissors,
+  Flower2,
+  Music,
+  Gift,
   Baby,
   Home as HomeIcon,
   Gem,
@@ -46,7 +50,11 @@ const services = [
   { Icon: Gem, label: "Engagements" },
   { Icon: Cake, label: "Birthdays" },
   { Icon: Sparkles, label: "Receptions" },
-  { Icon: Briefcase, label: "Corporate Events" },
+  { Icon: Church, label: "Baptism" },
+  { Icon: Scissors, label: "Inauguration" },
+  { Icon: Flower2, label: "Haldi" },
+  { Icon: Music, label: "Sangeeth" },
+  { Icon: Gift, label: "Bridal Shower" },
   { Icon: Baby, label: "Baby Showers" },
   { Icon: HomeIcon, label: "Housewarmings" },
   { Icon: Crown, label: "Stage Decoration" },
@@ -275,9 +283,9 @@ function Home() {
         />
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           {[
-            { name: "Priya & Arjun", text: "They turned our wedding into a fairytale. Every flower, every light — perfect." },
-            { name: "Rohit Mehra", text: "Our corporate gala has never looked this premium. Flawless execution." },
-            { name: "Anita Sharma", text: "From baby shower to housewarming, Good Look Events is our only call." },
+            { name: "Anjana & Arjun Nair", text: "They turned our wedding into a fairytale. Every flower, every light — perfect." },
+            { name: "Rohit Menon", text: "Our inauguration has never looked this premium. Flawless execution." },
+            { name: "Ananya Pillai", text: "From baby shower to housewarming, Good Look Events is our only call." },
           ].map((t) => (
             <div key={t.name} className="glass rounded-2xl p-7">
               <div className="flex gap-1 text-[color:var(--gold)]">
