@@ -13,12 +13,12 @@ export const Route = createFileRoute("/testimonials")({
 });
 
 const reviews = [
-  { name: "Priya & Arjun", role: "Wedding", text: "They turned our wedding into a fairytale. Every flower, every light — absolutely perfect. We received compliments for weeks." },
-  { name: "Rohit Mehra", role: "Corporate Gala", text: "Our annual gala has never looked this premium. Flawless execution, beautiful stage, on time and on budget." },
-  { name: "Anita Sharma", role: "Baby Shower", text: "From baby shower to housewarming, Good Look Events is now our only call. Creative, warm and so easy to work with." },
-  { name: "Karan & Neha", role: "Engagement", text: "The pastel theme they designed was beyond our imagination. So many photos, so many memories." },
-  { name: "Vikram Joshi", role: "50th Birthday", text: "They understood exactly what dad wanted — classy, not loud. The setup was timeless." },
-  { name: "Meera & Family", role: "Reception", text: "The reception ballroom was breathtaking. Guests are still talking about the florals." },
+  { name: "Anjana & Arjun Nair", role: "Wedding", text: "They turned our wedding into a fairytale. Every flower, every light — absolutely perfect. We received compliments for weeks." },
+  { name: "Rohit Menon", role: "Inauguration", text: "Our inauguration has never looked this premium. Flawless execution, beautiful stage, on time and on budget." },
+  { name: "Ananya Pillai", role: "Baby Shower", text: "From baby shower to housewarming, Good Look Events is now our only call. Creative, warm and so easy to work with." },
+  { name: "Kiran & Nimisha Thomas", role: "Engagement", text: "The pastel theme they designed was beyond our imagination. So many photos, so many memories." },
+  { name: "Vivek Krishnan", role: "50th Birthday", text: "They understood exactly what dad wanted — classy, not loud. The setup was timeless." },
+  { name: "Meera Nambiar & Family", role: "Reception", text: "The reception ballroom was breathtaking. Guests are still talking about the florals." },
 ];
 
 function Testimonials() {

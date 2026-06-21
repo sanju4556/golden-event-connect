@@ -1,18 +1,18 @@
 // Central place to update business contact details.
 export const SITE = {
   name: "Good Look Events",
-  tagline: "Creating Unforgettable Celebrations with Style & Elegance.",
+  tagline: "We make your wedding dream come true.",
   // Format: country code + number, digits only (used for wa.me link)
-  whatsappNumber: "919999999999",
-  whatsappDisplay: "+91 99999 99999",
-  phone: "+91 99999 99999",
+  whatsappNumber: "919388103579",
+  whatsappDisplay: "+91 93881 03579",
+  phone: "+91 93881 03579",
   email: "hello@goodlookevents.com",
-  address: "123 Banquet Avenue, City, India",
+  address: "Kerala, India",
   mapEmbedSrc:
-    "https://www.google.com/maps?q=India&output=embed",
+    "https://maps.app.goo.gl/T2VoSBJVNLEeaF8D6",
   socials: {
-    instagram: "https://instagram.com/",
-    facebook: "https://facebook.com/",
+    instagram: "https://www.instagram.com/goodlook_event/",
+    facebook: "https://www.facebook.com/goodlookevents",
     youtube: "https://youtube.com/",
   },
 } as const;

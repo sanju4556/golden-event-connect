@@ -13,8 +13,9 @@ export function Footer() {
             <span className="font-display text-2xl gold-text">{SITE.name}</span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-md leading-relaxed">
-            Premium event management. Weddings, receptions, birthdays, corporate events
-            and bespoke celebrations — designed with elegance, executed with precision.
+            Premium event management. Weddings, receptions, birthdays, baptisms,
+            inaugurations, haldi, sangeeth, bridal showers and bespoke celebrations —
+            designed with elegance, executed with precision.
           </p>
           <div className="mt-6 flex gap-3">
             {[
