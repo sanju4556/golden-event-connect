@@ -7,7 +7,7 @@ export const SITE = {
   whatsappDisplay: "+91 93881 03579",
   phone: "+91 93881 03579",
   email: "goodlookstagedecorating@gmail.com",
-  address: "Kerala, India",
+  address: "Goodlook Events, Changaramkulam, Nannamukku P.O, Malappuram",
   mapEmbedSrc:
     "https://www.google.com/maps?q=10.7300225,76.0276487&z=18&output=embed",
   socials: {
