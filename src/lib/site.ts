@@ -9,7 +9,7 @@ export const SITE = {
   email: "goodlookstagedecorating@gmail.com",
   address: "Kerala, India",
   mapEmbedSrc:
-    "https://maps.app.goo.gl/T2VoSBJVNLEeaF8D6",
+    "https://www.google.com/maps?q=Good+Look+Events+Kerala&output=embed",
   socials: {
     instagram: "https://www.instagram.com/goodlook_event/",
     facebook: "https://www.facebook.com/goodlookevents",
