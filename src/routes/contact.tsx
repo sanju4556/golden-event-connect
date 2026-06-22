@@ -27,14 +27,14 @@ function Contact() {
             { Icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
             { Icon: MapPin, label: "Address", value: SITE.address },
           ].map(({ Icon, label, value, href, accent }) => (
-            <div key={label} className="flex items-start gap-4">
+            <div key={label} className="flex items-start gap-4 min-w-0">
               <div className="h-12 w-12 rounded-2xl grid place-items-center shrink-0" style={{ background: accent ? "var(--whatsapp)" : "var(--gradient-gold)" }}>
                 <Icon className={`h-5 w-5 ${accent ? "text-white" : "text-[color:var(--onyx)]"}`} />
               </div>
-              <div className="min-w-0">
+              <div className="min-w-0 flex-1">
                 <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">{label}</div>
                 {href ? (
-                  <a href={href} target={accent ? "_blank" : undefined} rel="noopener noreferrer" className="text-lg font-display hover:text-[color:var(--gold)] transition break-words">
+                  <a href={href} target={accent ? "_blank" : undefined} rel="noopener noreferrer" className="text-lg font-display hover:text-[color:var(--gold)] transition break-all">
                     {value}
                   </a>
                 ) : (
