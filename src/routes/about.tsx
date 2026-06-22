@@ -39,8 +39,8 @@ function About() {
 
       <div className="mt-20 grid md:grid-cols-4 gap-6 text-center">
         {[
-          ["500+", "Events Delivered"],
-          ["12", "Years of Craft"],
+          ["30000+", "Events Delivered"],
+          ["26", "Years of Craft"],
           ["100%", "Customisable"],
           ["4.9★", "Client Rating"],
         ].map(([n, l]) => (
