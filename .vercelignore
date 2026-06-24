@@ -1,0 +1,4 @@
+node_modules
+.lovable
+.DS_Store
+*.log
