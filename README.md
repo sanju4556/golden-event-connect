@@ -74,6 +74,23 @@ src/
 
 All contact details, social links, WhatsApp number, and the Google Map embed live in **`src/lib/site.ts`**. Update once and changes propagate across every page (nav, footer, contact, enquiry messages).
 
+## ▲ Deploying to Vercel
+
+This project is configured to deploy on Vercel out of the box via `vercel.json`.
+
+1. Push the repository to GitHub.
+2. In Vercel, click **Add New → Project** and import the repo.
+3. Leave Framework Preset as **Other** (the included `vercel.json` overrides build/install commands).
+4. Click **Deploy**.
+
+Under the hood:
+
+- `vercel.json` sets `buildCommand` to `NITRO_PRESET=vercel bun run build` so TanStack Start's Nitro server builds for the Vercel runtime instead of the default Cloudflare target.
+- `installCommand` uses `bun install` to match local development.
+- No environment variables are required — all business info is static in `src/lib/site.ts`.
+
+If you prefer npm on Vercel, change `installCommand` to `npm install` and `buildCommand` to `NITRO_PRESET=vercel npm run build`.
+
 ## 📜 License
 
 © Good Look Events. All rights reserved.
