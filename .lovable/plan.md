@@ -1,19 +1,17 @@
-## Changes
+## Problem
 
-### 1. About page stats (`src/routes/about.tsx`)
-- "12" Years of Craft → **"26"**
-- "500+" Events Delivered → **"30000+"**
+The logo is stored as a Lovable CDN asset pointer (`src/assets/logo.png.asset.json`) which resolves to `/__l5e/assets-v1/...`. That path is served by Lovable's preview/publish infrastructure only. On Vercel, that URL returns 404, so the logo doesn't display in the Nav and Footer.
 
-### 2. Fix map "refused to connect" (`src/lib/site.ts`)
-Replace the `maps.app.goo.gl` share link (Google blocks it in iframes) with a frameable embed URL:
-```
-https://www.google.com/maps?q=Good+Look+Events+Kerala&output=embed
-```
+Same applies to any other `.asset.json` files (hero image, gallery images, etc.) — they will all break on Vercel.
 
-### 3. Replace logo with uploaded image, background removed
-- Run AI background removal on `user-uploads://logogoodlook.jpg` → transparent PNG.
-- Upload via `lovable-assets create` to `src/assets/logo.png.asset.json`.
-- Delete the old `src/assets/logo.png` binary.
-- Update `src/components/site/Nav.tsx` and `src/components/site/Footer.tsx` to import the `.asset.json` pointer and use `logo.url` as the `src`.
+## Fix
 
-No routing, styling, or logic changes beyond the above.
+1. Download the logo binary from the Lovable CDN URL into `src/assets/logo.png` (a real file in the repo, bundled by Vite).
+2. Update `src/components/site/Nav.tsx` and `src/components/site/Footer.tsx` to `import logo from "@/assets/logo.png"` instead of reading `logoAsset.url` from the JSON pointer.
+3. Delete `src/assets/logo.png.asset.json`.
+4. Do the same migration for every other `.asset.json` referenced in the app (hero, gallery, service images, etc.) so the Vercel deployment renders all images. I'll scan `src/` for `.asset.json` imports and migrate each one the same way.
+5. Add `public/favicon.png` (copy of logo) and reference it in `__root.tsx` head links so the browser tab icon works on Vercel too.
+
+No visual or content changes — only swapping the asset delivery mechanism from Lovable CDN to bundled Vite assets so the build is fully portable to Vercel.
+
+After this, the Lovable preview will keep working (Vite serves the bundled file), and Vercel will serve the same file from its own static output.
