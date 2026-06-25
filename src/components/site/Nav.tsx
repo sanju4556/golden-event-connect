@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import logoAsset from "@/assets/logo.png.asset.json";
-const logo = logoAsset.url;
+import logo from "@/assets/logo.png";
 import { SITE, whatsappUrl } from "@/lib/site";
 
 const links = [
